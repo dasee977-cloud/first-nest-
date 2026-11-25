@@ -23,7 +23,7 @@ function loadData() {
 loadData();
 
 const AMAZON_HOST = /(^|\.)amazon\.[a-z.]+$/i;
-const AMAZON_SHORT = /(^|\.)(amzn\.to|amzn\.eu|a\.co)$/i;
+const AMAZON_SHORT = /(^|\.)(amzn\.to|amzn\.eu|a\.co|link\.amazon)$/i;
 
 /** Adds the right tracking ID (from site.json) for whichever Amazon store the link points to. */
 export function amazonUrl(link, fallbackName = "") {
