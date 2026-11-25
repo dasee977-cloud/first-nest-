@@ -1,0 +1,10 @@
+<article class="post-card">
+  <a class="post-card__media" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ post.data.image }}" alt="" width="1000" height="1500" loading="lazy" decoding="async">
+  </a>
+  <div class="post-card__body">
+    <p class="post-card__meta"><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>{% if post.data.category %} · {{ post.data.category }}{% endif %}</p>
+    <h3 class="post-card__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    <p class="post-card__desc">{{ post.data.description }}</p>
+  </div>
+</article>

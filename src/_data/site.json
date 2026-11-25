@@ -1,0 +1,28 @@
+{
+  "name": "First Nest",
+  "tagline": "Your first room, sorted.",
+  "url": "https://firstnest.netlify.app",
+  "language": "en",
+  "locale": "en_US",
+  "currency": "$",
+  "budgetLimit": 25,
+  "defaultOgImage": "/images/og-default.png",
+  "pinterestDomainVerify": "",
+  "social": {
+    "pinterest": "https://www.pinterest.com/",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/"
+  },
+
+  "amazon": {
+    "defaultStore": "amazon.com",
+    "trackingIds": {
+      "amazon.com": "firstnest-20",
+      "amazon.co.uk": "firstnest-21",
+      "amazon.com.au": "firstnest-22",
+      "amazon.ca": "firstnest0c-20"
+    }
+  },
+
+  "disclosure": "As an Amazon Associate I earn from qualifying purchases."
+}

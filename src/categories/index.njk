@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: "Dorm & First Apartment Essentials by Category | First Nest"
+description: "Browse renter-friendly dorm room essentials by category: sleep & bedding, study & desk setup, small room storage, kitchen starter kit, and decor & lighting."
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="kicker">Shop by zone</p>
+    <h1 class="page-hero__title">Every corner of your room, <span class="hl hl--yellow">covered.</span></h1>
+    <p class="page-hero__sub">Five zones, one small room. Pick where you're starting and we'll show you the best-value, renter-friendly picks for it.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {% include "partials/category-tiles.njk" %}
+  </div>
+</section>
+
+{%- for c in categories %}
+{%- set items = products | inCategory(c.slug) | byScore | limit(3) %}
+<section class="section section--catpreview" aria-labelledby="prev-{{ c.slug }}">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="kicker">Top 3</p>
+        <h2 id="prev-{{ c.slug }}" class="section__title">{{ c.name }}</h2>
+      </div>
+      <a class="link-arrow" href="/categories/{{ c.slug }}/">See all {{ c.short | lower }} picks</a>
+    </div>
+    <div class="product-grid product-grid--3">
+      {%- for p in items %}{% productCard p %}{% endfor %}
+    </div>
+  </div>
+</section>
+{%- endfor %}

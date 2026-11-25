@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Silicone Cooking Utensil Set (placeholder image)">
+  <rect width="600" height="600" fill="#FFE9F3"/>
+  <circle cx="300" cy="250" r="170" fill="#FFE14A" opacity=".55"/>
+  <circle cx="470" cy="110" r="26" fill="#2337E8" opacity=".18"/>
+  <circle cx="110" cy="400" r="16" fill="#2337E8" opacity=".18"/>
+  <g transform="translate(156 106) scale(3)">
+    <path d="M30 22c0-6 6-6 6-12M42 22c0-6 6-6 6-12M54 22c0-6 6-6 6-12" fill="none" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="45" cy="54" rx="31" ry="10" fill="#FF6FB1" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M14 54c0 18 14 26 31 26s31-8 31-26" fill="#2337E8" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M76 52h14" stroke="#0B1340" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" fill="none"/></g>
+  <text x="300" y="492" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Silicone Cooking</text><text x="300" y="532" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Utensil Set</text>
+  <rect x="209" y="548" width="182" height="34" rx="17" fill="#0B1340"/>
+  <text x="300" y="571" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" letter-spacing="1.5" fill="#fff">PLACEHOLDER</text>
+</svg>

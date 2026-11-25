@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="3-Tier Metal Rolling Utility Cart (placeholder image)">
+  <rect width="600" height="600" fill="#FFE9F3"/>
+  <circle cx="300" cy="250" r="170" fill="#FFE14A" opacity=".55"/>
+  <circle cx="470" cy="110" r="26" fill="#2337E8" opacity=".18"/>
+  <circle cx="110" cy="400" r="16" fill="#2337E8" opacity=".18"/>
+  <g transform="translate(156 106) scale(3)">
+    <rect x="14" y="52" width="34" height="30" rx="3" fill="#FFE14A" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="50" y="52" width="34" height="30" rx="3" fill="#FF6FB1" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="30" y="18" width="38" height="32" rx="3" fill="#fff" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M24 64h14M60 64h14M42 30h14" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/></g>
+  <text x="300" y="492" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">3-Tier Metal Rolling</text><text x="300" y="532" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Utility Cart</text>
+  <rect x="209" y="548" width="182" height="34" rx="17" fill="#0B1340"/>
+  <text x="300" y="571" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" letter-spacing="1.5" fill="#fff">PLACEHOLDER</text>
+</svg>

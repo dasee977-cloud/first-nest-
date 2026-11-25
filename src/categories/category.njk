@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/categories/{{ cat.slug }}/"
+eleventyComputed:
+  title: "{{ cat.metaTitle }}"
+  description: "{{ cat.metaDescription }}"
+---
+{%- set items = products | inCategory(cat.slug) | byScore -%}
+<section class="page-hero page-hero--{{ cat.accent }}">
+  <div class="wrap page-hero__split">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/">Categories</a> / <span aria-current="page">{{ cat.name }}</span></nav>
+      <h1 class="page-hero__title">{{ cat.name }}</h1>
+      <p class="page-hero__sub">{{ cat.tagline }}</p>
+    </div>
+    <img class="page-hero__icon" src="/images/icons/{{ cat.slug }}.svg" alt="" width="160" height="160">
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="intro-note">
+      <p>{{ cat.intro }}</p>
+      <p class="intro-note__count"><b>{{ items.length }}</b> picks · sorted by First Nest score</p>
+    </div>
+    <div class="product-grid product-grid--3">
+      {%- for p in items %}{% productCard p %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--more">
+  <div class="wrap">
+    <h2 class="section__title">Keep building your room</h2>
+    <ul class="pill-links">
+      {%- for c in categories %}{% if c.slug != cat.slug %}
+      <li><a href="/categories/{{ c.slug }}/">{{ c.name }}</a></li>
+      {%- endif %}{% endfor %}
+      <li><a href="/budget-picks/">Under {{ site.currency }}{{ site.budgetLimit }}</a></li>
+    </ul>
+  </div>
+</section>

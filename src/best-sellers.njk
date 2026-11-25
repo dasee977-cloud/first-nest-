@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: "Best-Selling Dorm Room Essentials & First Apartment Must-Haves | First Nest"
+description: "The most popular dorm room essentials and first apartment must-haves our readers buy: Twin XL toppers, no-drill storage, desk lamps and cosy lighting."
+---
+{%- set items = products | flagged("bestSeller") | byScore -%}
+<section class="page-hero page-hero--pink">
+  <div class="wrap">
+    <p class="kicker kicker--ink">Reader favourites</p>
+    <h1 class="page-hero__title">Best sellers</h1>
+    <p class="page-hero__sub">The picks First Nest readers actually buy the most. Proven, well-reviewed and worth every cent.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="product-grid product-grid--3">
+      {%- for p in items %}{% productCard p, loop.index %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% include "partials/how-we-score.njk" %}

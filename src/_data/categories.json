@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "sleep-bedding",
+    "name": "Sleep & Bedding",
+    "short": "Sleep",
+    "emoji": "zzz",
+    "accent": "pink",
+    "tagline": "Twin XL sheets, toppers & pillows that make a dorm bed actually comfy.",
+    "metaTitle": "Best Dorm Bedding & Twin XL Sheets for Your First Room | First Nest",
+    "metaDescription": "Comfy, affordable dorm bedding picks: Twin XL sheets, mattress toppers, pillows and duvets rated for dorm rooms, share houses and first apartments.",
+    "intro": "Dorm mattresses are famously rough, and first-apartment beds aren't much better. These are the toppers, sheets and pillows that do the most for your sleep without wrecking your budget. Double-check your mattress size first: most US dorms use Twin XL."
+  },
+  {
+    "slug": "study-desk-setup",
+    "name": "Study & Desk Setup",
+    "short": "Study",
+    "emoji": "A+",
+    "accent": "yellow",
+    "tagline": "Lamps, stands & chairs for a desk you'll actually want to sit at.",
+    "metaTitle": "Best Dorm Desk Setup Essentials & Study Gear for Students | First Nest",
+    "metaDescription": "Build a dorm desk setup that works: student-tested desk lamps, laptop stands, organisers and chair cushions that fit small rooms and small budgets.",
+    "intro": "A good desk setup is the difference between studying in your room and escaping to the library every night. These picks are compact, renter-friendly and chosen for small desks."
+  },
+  {
+    "slug": "storage-organisation",
+    "name": "Storage & Organisation",
+    "short": "Storage",
+    "emoji": "box",
+    "accent": "pink",
+    "tagline": "No-drill hooks, under-bed bins & stackers for rooms with zero storage.",
+    "metaTitle": "Small Room Storage Ideas & No-Drill Dorm Organisation | First Nest",
+    "metaDescription": "Renter-friendly small room storage: no-drill hooks, under-bed storage, over-door organisers and stackable bins that keep a tiny dorm or first apartment tidy.",
+    "intro": "Small rooms don't need fewer things, they need smarter storage. Everything here goes up without drilling and comes down on move-out day without costing you your deposit."
+  },
+  {
+    "slug": "kitchen-starter-kit",
+    "name": "Kitchen Starter Kit",
+    "short": "Kitchen",
+    "emoji": "eat",
+    "accent": "yellow",
+    "tagline": "The pans, knives & gadgets your first kitchen actually needs.",
+    "metaTitle": "First Apartment Kitchen Essentials Starter Kit Checklist | First Nest",
+    "metaDescription": "First apartment kitchen essentials on a budget: the starter pans, knives, utensils and dorm-friendly appliances worth buying (and what to skip).",
+    "intro": "You don't need a 30-piece set. You need a few good basics that cover 90% of student cooking. Check your dorm rules before buying any appliance with a heating element."
+  },
+  {
+    "slug": "decor-lighting",
+    "name": "Decor & Lighting",
+    "short": "Decor",
+    "emoji": "glow",
+    "accent": "pink",
+    "tagline": "Renter-friendly lights, rugs & wall decor to make it feel like yours.",
+    "metaTitle": "Renter-Friendly Decor & Cosy Dorm Lighting Ideas | First Nest",
+    "metaDescription": "Renter-friendly decor that makes a bare room feel like home: warm lighting, rugs, removable wall art and cosy dorm room decor ideas on a budget.",
+    "intro": "Overhead fluorescent lighting is the enemy. Warm lamps, a rug and a few things on the walls are the fastest way to make a room feel like yours. All picks are damage-free."
+  }
+]

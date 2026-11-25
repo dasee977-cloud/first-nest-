@@ -1,0 +1,14 @@
+<ul class="cat-tiles">
+  {%- for c in categories %}
+  {%- set count = (products | inCategory(c.slug)).length %}
+  <li>
+    <a class="cat-tile cat-tile--{{ c.accent }}" href="/categories/{{ c.slug }}/">
+      <img class="cat-tile__icon" src="/images/icons/{{ c.slug }}.svg" alt="" width="96" height="96" loading="lazy">
+      <span class="cat-tile__count">{{ count }} picks</span>
+      <span class="cat-tile__name">{{ c.name }}</span>
+      <span class="cat-tile__tag">{{ c.tagline }}</span>
+      <span class="cat-tile__go" aria-hidden="true">→</span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+bodyClass: post-page
+---
+{%- set postUrl = page.url | absoluteUrl -%}
+{%- set pinImage = image | absoluteUrl -%}
+{%- set pinText = pinDescription or description -%}
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-hero">
+    <div class="wrap post-hero__grid">
+      <div class="post-hero__copy">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a>{% if category %} / <span>{{ category }}</span>{% endif %}</nav>
+        <h1 class="post-hero__title" itemprop="headline">{{ title }}</h1>
+        <p class="post-hero__desc">{{ description }}</p>
+        <p class="post-hero__meta">
+          <span>By <a href="/about/">{{ author or "First Nest" }}</a></span>
+          <span><time datetime="{{ page.date | isoDate }}" itemprop="datePublished">{{ page.date | readableDate }}</time></span>
+          <span>{{ content | readingTime }}</span>
+        </p>
+        <a class="btn btn--pin" target="_blank" rel="noopener"
+           href="https://www.pinterest.com/pin/create/button/?url={{ postUrl | urlencode }}&media={{ pinImage | urlencode }}&description={{ pinText | urlencode }}">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.7 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.9 1.6 1.9 1.9 0 3.3-2 3.3-4.9 0-2.6-1.8-4.4-4.5-4.4-3 0-4.8 2.3-4.8 4.6 0 .9.4 1.9.8 2.4l.1.4-.3 1.2c0 .2-.2.3-.4.2-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.3 0 3.7-2.4 6.8-5.6 6.8-1.1 0-2.2-.6-2.5-1.3l-.7 2.6c-.2 1-.9 2.2-1.4 2.9A10 10 0 1 0 12 2z"/></svg>
+          Save to Pinterest
+        </a>
+      </div>
+      <figure class="post-hero__media">
+        <img src="{{ image }}" alt="{{ imageAlt or title }}" width="1000" height="1500"
+             data-pin-description="{{ pinText }}" data-pin-media="{{ pinImage }}" itemprop="image" fetchpriority="high">
+      </figure>
+    </div>
+  </header>
+
+  <div class="wrap post-body">
+    <p class="post-disclosure"><strong>Heads up:</strong> {{ site.disclosure }} This post contains affiliate links, which means First Nest may earn a small commission if you buy through them, at no extra cost to you.</p>
+    <div class="prose" itemprop="articleBody">
+      {{ content | safe }}
+    </div>
+
+    {%- if shopThePost and shopThePost.length %}
+    <section class="shop-post" aria-labelledby="shop-title">
+      <h2 id="shop-title" class="section__title">Shop this post</h2>
+      <div class="product-grid product-grid--3">
+        {%- for id in shopThePost %}{% for p in products %}{% if p.id == id %}{% productCard p %}{% endif %}{% endfor %}{% endfor %}
+      </div>
+    </section>
+    {%- endif %}
+  </div>
+
+  <aside class="section section--blog" aria-labelledby="more-title">
+    <div class="wrap">
+      <h2 id="more-title" class="section__title">Keep reading</h2>
+      <div class="post-grid">
+        {%- for post in collections.posts | exceptUrl(page.url) | limit(3) %}
+        {% include "partials/post-card.njk" %}
+        {%- endfor %}
+      </div>
+    </div>
+  </aside>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  "description": {{ description | dump | safe }},
+  "image": {{ pinImage | dump | safe }},
+  "datePublished": "{{ page.date | isoDate }}",
+  "dateModified": "{{ (updated or page.date) | isoDate }}",
+  "author": { "@type": "Person", "name": {{ (author or site.name) | dump | safe }} },
+  "publisher": { "@type": "Organization", "name": {{ site.name | dump | safe }} },
+  "mainEntityOfPage": {{ postUrl | dump | safe }}
+}
+</script>

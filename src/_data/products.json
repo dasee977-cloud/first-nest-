@@ -1,0 +1,427 @@
+[
+  {
+    "id": "cooling-mattress-topper",
+    "name": "Cooling Gel Memory Foam Topper (Twin XL)",
+    "description": "3-inch gel foam topper that turns a rock-hard dorm mattress into something you'll actually sleep on.",
+    "score": 4.8,
+    "priceRange": [
+      45,
+      70
+    ],
+    "category": "sleep-bedding",
+    "image": "/images/products/cooling-mattress-topper.svg",
+    "affiliateLink": "",
+    "badge": "Dorm MVP",
+    "featured": false,
+    "topPick": true,
+    "bestSeller": true
+  },
+  {
+    "id": "twin-xl-sheet-set",
+    "name": "Brushed Microfibre Sheet Set (Twin XL)",
+    "description": "Soft, wrinkle-resistant and deep-pocketed enough for a topper. Comes in 20+ colours.",
+    "score": 4.6,
+    "priceRange": [
+      18,
+      24
+    ],
+    "category": "sleep-bedding",
+    "image": "/images/products/twin-xl-sheet-set.svg",
+    "affiliateLink": "",
+    "badge": "Under $25",
+    "featured": true,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "shredded-foam-pillow",
+    "name": "Adjustable Shredded Foam Pillow",
+    "description": "Add or remove fill until it's exactly right. Works for side, back and stomach sleepers.",
+    "score": 4.5,
+    "priceRange": [
+      25,
+      40
+    ],
+    "category": "sleep-bedding",
+    "image": "/images/products/shredded-foam-pillow.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "all-season-duvet",
+    "name": "All-Season Down-Alternative Duvet",
+    "description": "Lightweight but warm, machine washable, and fits a duvet cover so you can change your whole look.",
+    "score": 4.4,
+    "priceRange": [
+      30,
+      50
+    ],
+    "category": "sleep-bedding",
+    "image": "/images/products/all-season-duvet.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "silk-sleep-mask",
+    "name": "Contoured Blackout Sleep Mask",
+    "description": "Blocks your roommate's 2am desk lamp completely without pressing on your eyes.",
+    "score": 4.7,
+    "priceRange": [
+      10,
+      16
+    ],
+    "category": "sleep-bedding",
+    "image": "/images/products/silk-sleep-mask.svg",
+    "affiliateLink": "",
+    "badge": "Roommate saver",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "clip-desk-lamp",
+    "name": "Clip-On LED Desk Lamp with USB Port",
+    "description": "Clamps to a desk, shelf or bunk frame. Three colour temperatures and a phone-charging port.",
+    "score": 4.7,
+    "priceRange": [
+      16,
+      24
+    ],
+    "category": "study-desk-setup",
+    "image": "/images/products/clip-desk-lamp.svg",
+    "affiliateLink": "",
+    "badge": "Under $25",
+    "featured": false,
+    "topPick": true,
+    "bestSeller": true
+  },
+  {
+    "id": "laptop-stand",
+    "name": "Foldable Aluminium Laptop Stand",
+    "description": "Raises your screen to eye level so your neck survives finals season. Folds flat for your bag.",
+    "score": 4.6,
+    "priceRange": [
+      20,
+      30
+    ],
+    "category": "study-desk-setup",
+    "image": "/images/products/laptop-stand.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "desk-organiser",
+    "name": "Mesh Desktop Organiser with Drawers",
+    "description": "Pens, sticky notes, chargers and cables in one footprint smaller than a notebook.",
+    "score": 4.3,
+    "priceRange": [
+      14,
+      22
+    ],
+    "category": "study-desk-setup",
+    "image": "/images/products/desk-organiser.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "seat-cushion",
+    "name": "Memory Foam Seat Cushion",
+    "description": "Makes a hard dorm-issued desk chair bearable for long study sessions. Non-slip base.",
+    "score": 4.4,
+    "priceRange": [
+      22,
+      35
+    ],
+    "category": "study-desk-setup",
+    "image": "/images/products/seat-cushion.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "extension-cord-tower",
+    "name": "Surge-Protected Power Strip with USB-C",
+    "description": "Outlets are always in the wrong place. Six AC ports, USB-C and a flat plug that fits behind furniture.",
+    "score": 4.8,
+    "priceRange": [
+      19,
+      28
+    ],
+    "category": "study-desk-setup",
+    "image": "/images/products/extension-cord-tower.svg",
+    "affiliateLink": "",
+    "badge": "Must-have",
+    "featured": false,
+    "topPick": true,
+    "bestSeller": true
+  },
+  {
+    "id": "adhesive-hooks",
+    "name": "Damage-Free Adhesive Hooks (Value Pack)",
+    "description": "Hang towels, bags, keys and lights without a single nail hole. Removes clean on move-out day.",
+    "score": 4.9,
+    "priceRange": [
+      9,
+      15
+    ],
+    "category": "storage-organisation",
+    "image": "/images/products/adhesive-hooks.svg",
+    "affiliateLink": "",
+    "badge": "No drill",
+    "featured": false,
+    "topPick": true,
+    "bestSeller": true
+  },
+  {
+    "id": "under-bed-storage",
+    "name": "Zip-Up Under-Bed Storage Bags (2-Pack)",
+    "description": "Clear-window bags that slide under a lofted or standard bed to hold off-season clothes and spare bedding.",
+    "score": 4.5,
+    "priceRange": [
+      18,
+      26
+    ],
+    "category": "storage-organisation",
+    "image": "/images/products/under-bed-storage.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": true,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "over-door-organiser",
+    "name": "Over-the-Door Organiser with Pockets",
+    "description": "Turns the back of any door into storage for shoes, toiletries or snacks. Zero tools needed.",
+    "score": 4.4,
+    "priceRange": [
+      12,
+      20
+    ],
+    "category": "storage-organisation",
+    "image": "/images/products/over-door-organiser.svg",
+    "affiliateLink": "",
+    "badge": "Under $25",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "rolling-cart",
+    "name": "3-Tier Metal Rolling Utility Cart",
+    "description": "The single most useful thing in a small room. Bedside table, snack station or bathroom caddy on wheels.",
+    "score": 4.8,
+    "priceRange": [
+      25,
+      40
+    ],
+    "category": "storage-organisation",
+    "image": "/images/products/rolling-cart.svg",
+    "affiliateLink": "",
+    "badge": "Fan fave",
+    "featured": false,
+    "topPick": true,
+    "bestSeller": true
+  },
+  {
+    "id": "stackable-bins",
+    "name": "Collapsible Fabric Storage Cubes (6-Pack)",
+    "description": "Fits standard cube shelving, folds flat when you move, and hides clutter in seconds.",
+    "score": 4.3,
+    "priceRange": [
+      20,
+      30
+    ],
+    "category": "storage-organisation",
+    "image": "/images/products/stackable-bins.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "nonstick-pan-set",
+    "name": "Nonstick Frying Pan Set (8\" + 10\")",
+    "description": "Two pans cover eggs, stir-fries, pasta sauce and toasties. Oven-safe and easy to clean.",
+    "score": 4.5,
+    "priceRange": [
+      25,
+      40
+    ],
+    "category": "kitchen-starter-kit",
+    "image": "/images/products/nonstick-pan-set.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "chef-knife",
+    "name": "8-Inch Chef's Knife with Blade Guard",
+    "description": "One sharp knife beats a block of blunt ones. Includes a guard so it's safe in a shared drawer.",
+    "score": 4.6,
+    "priceRange": [
+      15,
+      24
+    ],
+    "category": "kitchen-starter-kit",
+    "image": "/images/products/chef-knife.svg",
+    "affiliateLink": "",
+    "badge": "Under $25",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "silicone-utensil-set",
+    "name": "Silicone Cooking Utensil Set",
+    "description": "Spatula, ladle, tongs and spoons that won't scratch your nonstick pans. Heat resistant.",
+    "score": 4.4,
+    "priceRange": [
+      14,
+      22
+    ],
+    "category": "kitchen-starter-kit",
+    "image": "/images/products/silicone-utensil-set.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "electric-kettle",
+    "name": "Compact Electric Kettle (1L)",
+    "description": "Tea, instant noodles, oats and pour-over in under three minutes. Auto shut-off for safety.",
+    "score": 4.6,
+    "priceRange": [
+      20,
+      30
+    ],
+    "category": "kitchen-starter-kit",
+    "image": "/images/products/electric-kettle.svg",
+    "affiliateLink": "",
+    "badge": "Check dorm rules",
+    "featured": true,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "meal-prep-containers",
+    "name": "Glass Meal Prep Containers (5-Pack)",
+    "description": "Microwave, freezer and dishwasher safe. Batch-cook on Sunday and eat well all week.",
+    "score": 4.5,
+    "priceRange": [
+      22,
+      32
+    ],
+    "category": "kitchen-starter-kit",
+    "image": "/images/products/meal-prep-containers.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "led-string-lights",
+    "name": "Warm White Fairy String Lights (33ft)",
+    "description": "The fastest way to make any room feel cosy. USB powered with a remote and timer.",
+    "score": 4.7,
+    "priceRange": [
+      10,
+      16
+    ],
+    "category": "decor-lighting",
+    "image": "/images/products/led-string-lights.svg",
+    "affiliateLink": "",
+    "badge": "Cosy hack",
+    "featured": false,
+    "topPick": true,
+    "bestSeller": true
+  },
+  {
+    "id": "sunset-lamp",
+    "name": "Sunset Projection Lamp",
+    "description": "Throws a golden-hour glow across your walls. Instant mood, very photogenic.",
+    "score": 4.2,
+    "priceRange": [
+      15,
+      24
+    ],
+    "category": "decor-lighting",
+    "image": "/images/products/sunset-lamp.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": true,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "washable-rug",
+    "name": "Machine-Washable Area Rug (4x6)",
+    "description": "Covers cold floors and ugly carpet, and goes straight in the washing machine. Non-slip backing.",
+    "score": 4.5,
+    "priceRange": [
+      35,
+      60
+    ],
+    "category": "decor-lighting",
+    "image": "/images/products/washable-rug.svg",
+    "affiliateLink": "",
+    "badge": "",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": true
+  },
+  {
+    "id": "removable-wallpaper",
+    "name": "Peel-and-Stick Removable Wallpaper",
+    "description": "Do one accent wall or the back of a bookshelf. Peels off clean, no residue, deposit safe.",
+    "score": 4.1,
+    "priceRange": [
+      15,
+      30
+    ],
+    "category": "decor-lighting",
+    "image": "/images/products/removable-wallpaper.svg",
+    "affiliateLink": "",
+    "badge": "Renter safe",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  },
+  {
+    "id": "photo-clip-lights",
+    "name": "Photo Clip String Lights",
+    "description": "Fairy lights with 30 mini pegs to hang photos, postcards and prints. Instant gallery wall.",
+    "score": 4.6,
+    "priceRange": [
+      9,
+      14
+    ],
+    "category": "decor-lighting",
+    "image": "/images/products/photo-clip-lights.svg",
+    "affiliateLink": "",
+    "badge": "Under $15",
+    "featured": false,
+    "topPick": false,
+    "bestSeller": false
+  }
+]

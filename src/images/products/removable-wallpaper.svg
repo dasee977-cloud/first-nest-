@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Peel-and-Stick Removable Wallpaper (placeholder image)">
+  <rect width="600" height="600" fill="#E7EBFF"/>
+  <circle cx="300" cy="250" r="170" fill="#FFE14A" opacity=".55"/>
+  <circle cx="470" cy="110" r="26" fill="#2337E8" opacity=".18"/>
+  <circle cx="110" cy="400" r="16" fill="#2337E8" opacity=".18"/>
+  <g transform="translate(156 106) scale(3)">
+    <path d="M48 6v8M20 18l6 6M76 18l-6 6M10 46h8M78 46h8" fill="none" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M48 22a22 22 0 0 0-13 40c3 2 4 6 4 9h18c0-3 1-7 4-9a22 22 0 0 0-13-40z" fill="#FFE14A" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="38" y="72" width="20" height="8" rx="2" fill="#FF6FB1" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="41" y="80" width="14" height="6" rx="2" fill="#fff" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M42 50l6 8 6-8" fill="none" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g>
+  <text x="300" y="492" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Peel-and-Stick</text><text x="300" y="532" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Removable Wallpaper</text>
+  <rect x="209" y="548" width="182" height="34" rx="17" fill="#0B1340"/>
+  <text x="300" y="571" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" letter-spacing="1.5" fill="#fff">PLACEHOLDER</text>
+</svg>

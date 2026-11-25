@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Surge-Protected Power Strip with USB-C (placeholder image)">
+  <rect width="600" height="600" fill="#FFE9F3"/>
+  <circle cx="300" cy="250" r="170" fill="#FFE14A" opacity=".55"/>
+  <circle cx="470" cy="110" r="26" fill="#2337E8" opacity=".18"/>
+  <circle cx="110" cy="400" r="16" fill="#2337E8" opacity=".18"/>
+  <g transform="translate(156 106) scale(3)">
+    <circle cx="66" cy="44" r="16" fill="#FFE14A" opacity=".6"/>
+    <rect x="20" y="78" width="44" height="8" rx="4" fill="#FF6FB1" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M42 78 30 48 52 30" fill="none" stroke="#0B1340" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="30" cy="48" r="4" fill="#fff" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M48 20l26 8-8 20-26-10z" fill="#2337E8" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g>
+  <text x="300" y="492" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Surge-Protected</text><text x="300" y="532" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Power Strip with…</text>
+  <rect x="209" y="548" width="182" height="34" rx="17" fill="#0B1340"/>
+  <text x="300" y="571" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" letter-spacing="1.5" fill="#fff">PLACEHOLDER</text>
+</svg>

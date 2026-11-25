@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: "Cheap Dorm Essentials Under $25: Budget Room Decor & Storage | First Nest"
+description: "Budget dorm room essentials under $25: renter-friendly storage, cosy lighting, desk lamps and bedding that look good without draining your student budget."
+---
+{%- set items = products | under(site.budgetLimit) | byPrice -%}
+<section class="page-hero page-hero--yellow">
+  <div class="wrap">
+    <p class="kicker kicker--ink">Broke-student approved</p>
+    <h1 class="page-hero__title">Budget picks under {{ site.currency }}{{ site.budgetLimit }}</h1>
+    <p class="page-hero__sub">Every product here tops out below {{ site.currency }}{{ site.budgetLimit }}. Sorted cheapest first, so you can build a whole room one small win at a time.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="product-grid product-grid--3">
+      {%- for p in items %}{% productCard p %}{% endfor %}
+    </div>
+    <p class="fine-print">Price ranges are approximate and change often on Amazon. Always check the current price before you buy.</p>
+  </div>
+</section>

@@ -1,0 +1,109 @@
+---
+layout: layouts/base.njk
+title: "Dorm Room Essentials & First Apartment Setup Picks | First Nest"
+description: "Your first room, sorted. Affordable, renter-friendly dorm room essentials, small room storage, first apartment setup and cosy decor, rated by a student."
+bodyClass: home
+---
+{%- set topPicks = products | flagged("topPick") | limit(6) -%}
+{%- set featured = products | flagged("featured") | limit(4) -%}
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="dot"></span> The {{ build.date | readableDate | replace(r/\s\d+,/, "") }} drop is live</p>
+      <h1 class="hero__title">Your first room, <span class="hl hl--yellow">sorted.</span></h1>
+      <p class="hero__sub">Affordable, renter-friendly picks for dorms, uni rooms, share houses and first apartments. No drills, no deposit drama, no overpriced junk. Just the stuff that actually makes a small room work.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--pink btn--lg" href="#top-picks">Shop top picks</a>
+        <a class="btn btn--ghost btn--lg" href="/blog/dorm-room-essentials-checklist/">Get the checklist</a>
+      </div>
+      <ul class="hero__chips" aria-label="Why First Nest">
+        <li>No-drill friendly</li>
+        <li>Picks under {{ site.currency }}{{ site.budgetLimit }}</li>
+        <li>Our own score /5</li>
+      </ul>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      {%- for p in topPicks | limit(3) %}
+      <figure class="hero__tile hero__tile--{{ loop.index }}">
+        <img src="{{ p.image }}" alt="" width="600" height="600">
+        <figcaption><span>{{ p.score | string }}</span>/5</figcaption>
+      </figure>
+      {%- endfor %}
+      <span class="sticker sticker--star">Renter<br>safe!</span>
+      <span class="sticker sticker--round">Student<br>tested</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--featured" aria-labelledby="featured-title">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="kicker">Fresh drop</p>
+        <h2 id="featured-title" class="section__title">Featured right now</h2>
+      </div>
+      <a class="link-arrow" href="/best-sellers/">See best sellers</a>
+    </div>
+    <div class="product-grid product-grid--4">
+      {%- for p in featured %}{% productCard p %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--categories" aria-labelledby="cat-title">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="kicker">Shop by zone</p>
+        <h2 id="cat-title" class="section__title">Best picks by category</h2>
+      </div>
+      <a class="link-arrow" href="/categories/">All categories</a>
+    </div>
+    {% include "partials/category-tiles.njk" %}
+  </div>
+</section>
+
+<section class="section section--toppicks" id="top-picks" aria-labelledby="top-title">
+  <div class="wrap">
+    <div class="section__head section__head--center">
+      <p class="kicker kicker--ink">Hand-picked · Updated monthly</p>
+      <h2 id="top-title" class="section__title section__title--xl">Top picks<br>this month</h2>
+      <p class="section__lede">The six things we'd buy first if we were moving in tomorrow. Ranked by First Nest score, value and how much they change a small room.</p>
+    </div>
+    <div class="product-grid product-grid--top">
+      {%- for p in topPicks %}{% productCard p, loop.index %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--budget">
+  <div class="wrap budget-band">
+    <div>
+      <p class="kicker">Broke-student approved</p>
+      <h2 class="section__title">Everything under <span class="hl hl--pink">{{ site.currency }}{{ site.budgetLimit }}</span></h2>
+      <p>{{ (products | under(site.budgetLimit)).length }} renter-friendly picks that cost less than a takeaway order for two.</p>
+    </div>
+    <a class="btn btn--yellow btn--lg" href="/budget-picks/">Shop budget picks</a>
+  </div>
+</section>
+
+<section class="section section--blog" aria-labelledby="blog-title">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="kicker">Guides & roundups</p>
+        <h2 id="blog-title" class="section__title">From the blog</h2>
+      </div>
+      <a class="link-arrow" href="/blog/">All posts</a>
+    </div>
+    <div class="post-grid">
+      {%- for post in collections.posts | limit(3) %}
+      {% include "partials/post-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/how-we-score.njk" %}

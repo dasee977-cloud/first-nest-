@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+permalink: /blog/
+ogType: website
+title: "Dorm Room Ideas, Small Room Storage & First Apartment Guides | First Nest Blog"
+description: "Dorm room ideas, small room storage hacks, renter-friendly decor and first apartment setup guides, with honest product roundups from a student."
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="kicker">The First Nest blog</p>
+    <h1 class="page-hero__title">Guides for <span class="hl hl--pink">small rooms</span> &amp; big moves</h1>
+    <p class="page-hero__sub">Checklists, roundups and renter-friendly hacks for dorms, uni rooms, share houses and first apartments.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="post-grid">
+      {%- for post in collections.posts %}
+      {% include "partials/post-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>

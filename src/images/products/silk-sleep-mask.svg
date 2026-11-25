@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Contoured Blackout Sleep Mask (placeholder image)">
+  <rect width="600" height="600" fill="#FFF7E8"/>
+  <circle cx="300" cy="250" r="170" fill="#FF6FB1" opacity=".55"/>
+  <circle cx="470" cy="110" r="26" fill="#2337E8" opacity=".18"/>
+  <circle cx="110" cy="400" r="16" fill="#2337E8" opacity=".18"/>
+  <g transform="translate(156 106) scale(3)">
+    <rect x="12" y="22" width="12" height="54" rx="4" fill="#FF6FB1" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="12" y="46" width="74" height="22" rx="6" fill="#fff" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="27" y="35" width="22" height="12" rx="6" fill="#FFE14A" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M50 46h36v22H50z" fill="#2337E8" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M18 68v10M80 68v10" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+    <path d="M60 14h10l-10 10h10M74 6h7l-7 7h7" fill="none" stroke="#0B1340" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g>
+  <text x="300" y="492" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Contoured Blackout</text><text x="300" y="532" text-anchor="middle" font-family="Unbounded, Arial Black, sans-serif" font-weight="700" font-size="32" fill="#0B1340">Sleep Mask</text>
+  <rect x="209" y="548" width="182" height="34" rx="17" fill="#0B1340"/>
+  <text x="300" y="571" text-anchor="middle" font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="14" letter-spacing="1.5" fill="#fff">PLACEHOLDER</text>
+</svg>

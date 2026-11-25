@@ -1,0 +1,59 @@
+{%- set pageTitle = title if title else site.name + " | " + site.tagline -%}
+{%- set metaTitle = metaTitle or pageTitle -%}
+{%- set metaDesc = description or "Renter-friendly dorm room essentials, first apartment setup ideas, small room storage and cosy decor picks, all researched and rated by a student." -%}
+{%- set shareImage = (image or site.defaultOgImage) | absoluteUrl -%}
+{%- set canonical = page.url | absoluteUrl -%}
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ metaTitle }}</title>
+  <meta name="description" content="{{ metaDesc }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <meta name="theme-color" content="#2337E8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  {% if site.pinterestDomainVerify %}<meta name="p:domain_verify" content="{{ site.pinterestDomainVerify }}">{% endif %}
+
+  {# Open Graph — used by Pinterest, Facebook, Instagram link stickers, iMessage, etc. #}
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:title" content="{{ ogTitle or metaTitle }}">
+  <meta property="og:description" content="{{ pinDescription or metaDesc }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ shareImage }}">
+  <meta property="og:image:alt" content="{{ imageAlt or metaTitle }}">
+  {% if ogType == "article" %}
+  <meta property="article:published_time" content="{{ page.date | isoDate }}">
+  {% if updated %}<meta property="article:modified_time" content="{{ updated | isoDate }}">{% endif %}
+  <meta property="article:author" content="{{ site.name }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ ogTitle or metaTitle }}">
+  <meta name="twitter:description" content="{{ pinDescription or metaDesc }}">
+  <meta name="twitter:image" content="{{ shareImage }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Unbounded:wght@500;700;900&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="disclosure-bar" role="note">
+    <span>{{ site.disclosure }}</span>
+  </div>
+
+  {% include "partials/header.njk" %}
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

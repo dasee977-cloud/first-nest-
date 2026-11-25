@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      {%- for i in range(0, 2) %}
+      <span>Renter-friendly</span><span>✦</span><span>No drill</span><span>✦</span><span>Student-tested</span><span>✦</span><span>Under budget</span><span>✦</span><span>Deposit safe</span><span>✦</span><span>Cosy by default</span><span>✦</span>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      <p class="site-footer__logo">First Nest</p>
+      <p>Renter-friendly picks for dorms, uni rooms, share houses and first apartments. Researched, compared and rated by a student.</p>
+      <ul class="social">
+        <li><a href="{{ site.social.pinterest }}" rel="me noopener" target="_blank">Pinterest</a></li>
+        <li><a href="{{ site.social.instagram }}" rel="me noopener" target="_blank">Instagram</a></li>
+        <li><a href="{{ site.social.tiktok }}" rel="me noopener" target="_blank">TikTok</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="site-footer__heading">Shop by room zone</p>
+      <ul>
+        {%- for c in categories %}
+        <li><a href="/categories/{{ c.slug }}/">{{ c.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div>
+      <p class="site-footer__heading">First Nest</p>
+      <ul>
+        {%- for item in nav %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap site-footer__legal">
+    <p class="site-footer__disclosure"><strong>{{ site.disclosure }}</strong> Product links on this site are affiliate links: if you buy through them, First Nest may earn a small commission at no extra cost to you. Prices and availability are accurate as of the date shown and may change. The First Nest score is our own rating and is not an Amazon star rating.</p>
+    <p>© {{ build.year }} {{ site.name }}. Made for small rooms and big plans.</p>
+  </div>
+</footer>
